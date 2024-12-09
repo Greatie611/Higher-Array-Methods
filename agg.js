@@ -1,7 +1,7 @@
 const datagetter = () =>{
     fetch("https://jsonplaceholder.typicode.com/posts")
     .then((response) => response.json())
-    .then((newsite) => {(newsite);
+    .then((newsite) => {console.log(newsite);
     const posts = newsite.map(each=> {
      return ` Title: ${each.title}, Body: ${each.body}`
     });
